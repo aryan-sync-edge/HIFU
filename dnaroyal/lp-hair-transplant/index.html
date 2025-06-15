@@ -38,7 +38,9 @@
 		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://dnaroyal.com/lp-hair-transplant/","url":"https://dnaroyal.com/lp-hair-transplant/","name":"LP-Hair Transplant - DNA ROYAL","isPartOf":{"@id":"https://dnaroyal.com/#website"},"primaryImageOfPage":{"@id":"https://dnaroyal.com/lp-hair-transplant/#primaryimage"},"image":{"@id":"https://dnaroyal.com/lp-hair-transplant/#primaryimage"},"thumbnailUrl":"https://dnaroyal.com/wp-content/uploads/2024/10/dna-logo.png","datePublished":"2025-04-26T09:16:07+00:00","dateModified":"2025-05-06T17:19:29+00:00","breadcrumb":{"@id":"https://dnaroyal.com/lp-hair-transplant/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://dnaroyal.com/lp-hair-transplant/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://dnaroyal.com/lp-hair-transplant/#primaryimage","url":"https://dnaroyal.com/wp-content/uploads/2024/10/dna-logo.png","contentUrl":"https://dnaroyal.com/wp-content/uploads/2024/10/dna-logo.png"},{"@type":"BreadcrumbList","@id":"https://dnaroyal.com/lp-hair-transplant/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dnaroyal.com/"},{"@type":"ListItem","position":2,"name":"LP-Hair Transplant"}]},{"@type":"WebSite","@id":"https://dnaroyal.com/#website","url":"https://dnaroyal.com/","name":"DNA ROYAL","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://dnaroyal.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
 	<!-- / Yoast SEO plugin. -->
 	<script src="index.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel='dns-prefetch' href='http://www.googletagmanager.com/' />
 	<link rel="alternate" type="application/rss+xml" title="DNA ROYAL &raquo; Feed" href="https://dnaroyal.com/feed/" />
 	<link rel="alternate" type="application/rss+xml" title="DNA ROYAL &raquo; Comments Feed"
@@ -685,22 +687,21 @@
 </head>
 
 <body
-
 	class="wp-singular page-template page-template-elementor_canvas page page-id-3414 wp-embed-responsive wp-theme-hello-elementor ehf-template-hello-elementor ehf-stylesheet-hello-elementor metaslider-plugin theme-default elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-3414">
-	
+
 	<!-- Success Alert -->
-<script>
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("status") === "success") {
-    // document.write(`
-    //   <div class="alert alert-success alert-dismissible fade show m-3" role="alert">
-    //     Thank you! Your message has been successfully sent.
-    //     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    //   </div>
-    // `);
-	alert("Response Submitted")
-  }
-</script>
+	<script>
+		const params = new URLSearchParams(window.location.search);
+		if (params.get("status") === "success") {
+			// document.write(`
+			//   <div class="alert alert-success alert-dismissible fade show m-3" role="alert">
+			//     Thank you! Your message has been successfully sent.
+			//     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			//   </div>
+			// `);
+			alert("Response Submitted")
+		}
+	</script>
 
 	<div data-elementor-type="wp-page" data-elementor-id="3414" class="elementor elementor-3414">
 		<div class="elementor-element elementor-element-5c9dd2df elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent"
@@ -802,7 +803,7 @@
 								<div class="ekit-offcanvas-toggle-wraper before">
 									<a href="#" class="ekit_navSidebar-button ekit_offcanvas-sidebar"
 										aria-label="offcanvas-menu">
-										<i aria-hidden="true" class="icon icon-burger-menu"></i> </a>
+										<i aria-hidden="true" class="fa-solid fa-bars"></i> </a>
 								</div>
 								<!-- offset cart strart -->
 								<!-- sidebar cart item -->
@@ -921,7 +922,8 @@
 			* props.SubmitResponseMarkup : contains the markup of error or success message
 			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		--------------------------- -->
-									<form class="metform-form-content" method="post" action="../php_handlers/send_mail.php">
+									<form class="metform-form-content" method="post"
+										action="../php_handlers/send_mail.php">
 										<!-- Success/Error Messages Area (placeholders) -->
 										<div id="form-messages-top"></div>
 
@@ -942,8 +944,8 @@
 															<div class="elementor-widget-container">
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-name">
-																		Your Name * <span
-																			class="mf-input-required-indicator">*</span>
+																		Your Name<span
+																			class="mf-input-required-indicator" style="color: red;">*</span>
 																	</label>
 																	<input type="text" class="mf-input" id="mf-name"
 																		name="mf-text" placeholder="Enter Your Name *"
@@ -958,7 +960,7 @@
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-email">
 																		Email <span
-																			class="mf-input-required-indicator">*</span>
+																			class="mf-input-required-indicator" style="color: red;">*</span>
 																	</label>
 																	<input type="email" class="mf-input" id="mf-email"
 																		name="mf-email" placeholder="Email" required>
@@ -972,7 +974,7 @@
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-phone">
 																		Your Phone <span
-																			class="mf-input-required-indicator">*</span>
+																			class="mf-input-required-indicator" style="color: red;">*</span>
 																	</label>
 																	<input type="tel" class="mf-input" id="mf-phone"
 																		name="mf-telephone" placeholder="+91XXXXXXXXXX"
@@ -984,7 +986,7 @@
 
 
 														<!-- Multi-Select Services -->
-														<div class="elementor-element elementor-widget-mf-multi-select">
+														<!-- <div class="elementor-element elementor-widget-mf-multi-select">
 															<div class="elementor-widget-container">
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-services">
@@ -1012,7 +1014,7 @@
 																	</select>
 																</div>
 															</div>
-														</div>
+														</div> -->
 
 														<!-- Comments/Questions -->
 														<div class="elementor-element elementor-widget-mf-textarea">
@@ -1124,7 +1126,8 @@
 			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		--------------------------- -->
 
-									<form class="metform-form-content" method="post" action="../php_handlers/send_mail.php">
+									<form class="metform-form-content" method="post"
+										action="../php_handlers/send_mail.php">
 										<!-- Success/Error Messages Area (placeholders) -->
 										<div id="form-messages-top"></div>
 
@@ -1145,8 +1148,8 @@
 															<div class="elementor-widget-container">
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-name">
-																		Your Name * <span
-																			class="mf-input-required-indicator">*</span>
+																		Your Name<span
+																			class="mf-input-required-indicator" style="color: red;">*</span>
 																	</label>
 																	<input type="text" class="mf-input" id="mf-name"
 																		name="mf-text" placeholder="Enter Your Name *"
@@ -1161,7 +1164,7 @@
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-email">
 																		Email <span
-																			class="mf-input-required-indicator">*</span>
+																			class="mf-input-required-indicator" style="color: red;">*</span>
 																	</label>
 																	<input type="email" class="mf-input" id="mf-email"
 																		name="mf-email" placeholder="Email" required>
@@ -1175,7 +1178,7 @@
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-phone">
 																		Your Phone <span
-																			class="mf-input-required-indicator">*</span>
+																			class="mf-input-required-indicator" style="color: red;">*</span>
 																	</label>
 																	<input type="tel" class="mf-input" id="mf-phone"
 																		name="mf-telephone" placeholder="+91XXXXXXXXXX"
@@ -1187,7 +1190,7 @@
 
 
 														<!-- Multi-Select Services -->
-														<div class="elementor-element elementor-widget-mf-multi-select">
+														<!-- <div class="elementor-element elementor-widget-mf-multi-select">
 															<div class="elementor-widget-container">
 																<div class="mf-input-wrapper">
 																	<label class="mf-input-label" for="mf-services">
@@ -1215,7 +1218,7 @@
 																	</select>
 																</div>
 															</div>
-														</div>
+														</div> -->
 
 														<!-- Comments/Questions -->
 														<div class="elementor-element elementor-widget-mf-textarea">
@@ -1256,7 +1259,8 @@
 					<div class="elementor-element elementor-element-93e844c elementor-widget elementor-widget-heading"
 						data-id="93e844c" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">✨ Experience the Art of Timeless Beauty <br> Non-Surgical Skin Renewal with HIFU</h2>
+							<h2 class="elementor-heading-title elementor-size-default">✨ Experience the Art of Timeless
+								Beauty <br> Non-Surgical Skin Renewal with HIFU</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-fbcb4cb elementor-widget elementor-widget-text-editor"
@@ -1266,8 +1270,10 @@
 								<div class="hero-inner d-flex v-center relative">
 									<div class="hero-caption">
 										<div class="relative">
-											<p><span style="font-weight: 400;">Discover the transformative power of advanced, non-invasive HIFU treatments at DNA Royal. Elegance, safety, and lasting radiance — tailored just for you.
-</span></p>
+											<p><span style="font-weight: 400;">Discover the transformative power of
+													advanced, non-invasive HIFU treatments at DNA Royal. Elegance,
+													safety, and lasting radiance — tailored just for you.
+												</span></p>
 										</div>
 									</div>
 								</div>
@@ -1536,6 +1542,67 @@
 				</div>
 			</div>
 		</div>
+		<!-- about hifu start -->
+
+		<div class="elementor-element elementor-element-5e86532 e-flex e-con-boxed e-con e-parent" data-id="5e86532"
+			data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="e-con-inner" style=" height: 1%; padding-bottom: 10px;">
+				<!-- desktop view -->
+				<div class="elementor-element elementor-element-9e00c01 elementor-hidden-tablet elementor-hidden-mobile elementor-widget__width-initial elementor-widget elementor-widget-elementskit-heading"
+					data-id="9e00c01" data-element_type="widget"
+					data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;}"
+					data-widget_type="elementskit-heading.default">
+					<div class="elementor-widget-container">
+						<div class="ekit-wid-con">
+							<div
+								class="ekit-heading elementskit-section-title-wraper center   ekit_heading_tablet-   ekit_heading_mobile-">
+								<h2 class="ekit-heading--title elementskit-section-title ">What is HIFU & How Does It
+									Work?</h2>
+								<div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-star">
+									<div class="elementskit-border-star"></div>
+								</div>
+								<div class='ekit-heading__description'>
+									<p>HIFU — or High-Intensity Focused Ultrasound — is a state-of-the-art, clinically
+										advanced technology that gently lifts and rejuvenates the skin from within. By
+										precisely stimulating collagen production deep beneath the surface, this
+										non-invasive treatment reveals firmer, smoother, and naturally youthful skin
+										without surgery or downtime.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- mobile  view -->
+				<div class="elementor-element elementor-element-256afff elementor-hidden-desktop elementor-widget elementor-widget-elementskit-heading"
+					data-id="256afff" data-element_type="widget"
+					data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;}"
+					data-widget_type="elementskit-heading.default">
+					<div class="elementor-widget-container">
+						<div class="ekit-wid-con">
+							<div
+								class="ekit-heading elementskit-section-title-wraper center   ekit_heading_tablet-   ekit_heading_mobile-">
+								<h2 class="ekit-heading--title elementskit-section-title ">What is HIFU & How Does It
+									Work?</h2>
+								<div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-star">
+									<div class="elementskit-border-star"></div>
+								</div>
+								<div class='ekit-heading__description'>
+									<p>HIFU — or High-Intensity Focused Ultrasound — is a state-of-the-art, clinically
+										advanced technology that gently lifts and rejuvenates the skin from within. By
+										precisely stimulating collagen production deep beneath the surface, this
+										non-invasive treatment reveals firmer, smoother, and naturally youthful skin
+										without surgery or downtime.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- about hifu -->
+
+		<!-- Why Choose Section  -->
 		<div class="elementor-element elementor-element-0e4bd9b elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent"
 			data-id="0e4bd9b" data-element_type="container">
 			<div class="e-con-inner">
@@ -1552,13 +1619,14 @@
 								sizes="(max-width: 1536px) 100vw, 1536px" />
 						</div>
 					</div>
-					<!-- Why Choose Section  -->
+
 					<div class="elementor-element elementor-element-29766e9 e-con-full e-flex e-con e-child"
 						data-id="29766e9" data-element_type="container">
 						<div class="elementor-element elementor-element-5920e4f elementor-widget elementor-widget-heading"
 							data-id="5920e4f" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-								<h2 class="elementor-heading-title elementor-size-default">🌟 Why Choose HIFU for Your Skin Renewal?</h2>
+								<h2 class="elementor-heading-title elementor-size-default">🌟 Why Choose HIFU for Your
+									Skin Renewal?</h2>
 							</div>
 						</div>
 						<div class="elementor-element elementor-element-fe1fdd1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
@@ -1568,27 +1636,32 @@
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text">Non-invasive, pain-free treatment with zero incisions</span>
+										<span class="elementor-icon-list-text">Non-invasive, pain-free treatment with
+											zero incisions</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text"> No visible scars or recovery period</span>
+										<span class="elementor-icon-list-text"> No visible scars or recovery
+											period</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text">Stimulates natural collagen for radiant, youthful skin</span>
+										<span class="elementor-icon-list-text">Stimulates natural collagen for radiant,
+											youthful skin</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text"> Delivers subtle yet lasting improvements</span>
+										<span class="elementor-icon-list-text"> Delivers subtle yet lasting
+											improvements</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text">Proven clinical results with minimal discomfort</span>
+										<span class="elementor-icon-list-text">Proven clinical results with minimal
+											discomfort</span>
 									</li>
 									<!-- <li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
@@ -1608,6 +1681,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- Why choose us mobile -->
 		<div class="elementor-element elementor-element-11dc92d elementor-hidden-desktop e-flex e-con-boxed e-con e-parent"
 			data-id="11dc92d" data-element_type="container">
 			<div class="e-con-inner">
@@ -1628,7 +1702,8 @@
 					<div class="elementor-element elementor-element-ef7c8cc elementor-widget elementor-widget-heading"
 						data-id="ef7c8cc" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">🌟 Why Choose HIFU for Your Skin Renewal?</h2>
+							<h2 class="elementor-heading-title elementor-size-default">🌟 Why Choose HIFU for Your Skin
+								Renewal?</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-b11898f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
@@ -1639,27 +1714,32 @@
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text">Non-invasive, pain-free treatment with zero incisions</span>
+										<span class="elementor-icon-list-text">Non-invasive, pain-free treatment with
+											zero incisions</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text"> No visible scars or recovery period</span>
+										<span class="elementor-icon-list-text"> No visible scars or recovery
+											period</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text">Stimulates natural collagen for radiant, youthful skin</span>
+										<span class="elementor-icon-list-text">Stimulates natural collagen for radiant,
+											youthful skin</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text"> Delivers subtle yet lasting improvements</span>
+										<span class="elementor-icon-list-text"> Delivers subtle yet lasting
+											improvements</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
-										<span class="elementor-icon-list-text">Proven clinical results with minimal discomfort</span>
+										<span class="elementor-icon-list-text">Proven clinical results with minimal
+											discomfort</span>
 									</li>
 									<!-- <li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
@@ -1695,8 +1775,9 @@
 									<div class="elementskit-border-star"></div>
 								</div>
 								<div class='ekit-heading__description'>
-									<p>HIFU offers a sophisticated alternative to traditional facelifts. Experience unparalleled elegance with exceptional benefits
-</p>
+									<p>HIFU offers a sophisticated alternative to traditional facelifts. Experience
+										unparalleled elegance with exceptional benefits
+									</p>
 								</div>
 							</div>
 						</div>
@@ -1715,7 +1796,8 @@
 									<div class="elementskit-border-star"></div>
 								</div>
 								<div class='ekit-heading__description'>
-									<p>HIFU offers a sophisticated alternative to traditional facelifts. Experience unparalleled elegance with these exceptional benefits</p>
+									<p>HIFU offers a sophisticated alternative to traditional facelifts. Experience
+										unparalleled elegance with these exceptional benefits</p>
 								</div>
 							</div>
 						</div>
@@ -1737,7 +1819,8 @@
 												<div class="single-client image-switcher" title="DNA 1">
 													<div class="content-image">
 														<img loading="lazy" decoding="async" width="1536" height="864"
-															src="../wp-content/uploads/before_after/01.jpg" class="" alt=""
+															src="../wp-content/uploads/before_after/01.jpg" class=""
+															alt=""
 															srcset="../wp-content/uploads/before_after/01.jpg 1536w, ../wp-content/uploads/before_after/01.jpg 300w, ../wp-content/uploads/before_after/01.jpg 1024w, ../wp-content/uploads/before_after/01.jpg 768w"
 															sizes="(max-width: 1536px) 100vw, 1536px" />
 													</div>
@@ -1749,7 +1832,8 @@
 												<div class="single-client image-switcher" title="DNA 2">
 													<div class="content-image">
 														<img loading="lazy" decoding="async" width="1536" height="864"
-															src="../wp-content/uploads/before_after/02.jpg" class="" alt=""
+															src="../wp-content/uploads/before_after/02.jpg" class=""
+															alt=""
 															srcset="../wp-content/uploads/before_after/02.jpg 1536w, ../wp-content/uploads/before_after/02.jpg 300w, ../wp-content/uploads/before_after/02.jpg 1024w, ../wp-content/uploads/before_after/02.jpg 768w"
 															sizes="(max-width: 1536px) 100vw, 1536px" />
 													</div>
@@ -1761,7 +1845,8 @@
 												<div class="single-client image-switcher" title="DNA 3">
 													<div class="content-image">
 														<img loading="lazy" decoding="async" width="1536" height="864"
-															src="../wp-content/uploads/before_after/03.jpg" class="" alt=""
+															src="../wp-content/uploads/before_after/03.jpg" class=""
+															alt=""
 															srcset="../wp-content/uploads/before_after/03.jpg 1536w, ../wp-content/uploads/before_after/03.jpg 300w, ../wp-content/uploads/before_after/03.jpg 1024w, ../wp-content/uploads/before_after/03.jpg 768w"
 															sizes="(max-width: 1536px) 100vw, 1536px" />
 													</div>
@@ -3569,7 +3654,8 @@
 									<div class="elementskit-funfact-inner position_top">
 										<div class="funfact-icon"> <i></i>
 
-											<i aria-hidden="true" class="elementskit-funfact-icon fa-solid fa-business-time"></i>
+											<i aria-hidden="true"
+												class="elementskit-funfact-icon fa-solid fa-business-time"></i>
 										</div>
 
 										<div class="funfact-content">
@@ -3957,7 +4043,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-8919738">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															
+
 															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
@@ -5267,12 +5353,12 @@
 		id="elementskit-elementor-js"></script>
 
 
-		<!-- success popup -->
-		 <!-- Success Alert -->
-		  <!-- Bootstrap CSS -->
+	<!-- success popup -->
+	<!-- Success Alert -->
+	<!-- Bootstrap CSS -->
 
-<!-- Bootstrap JS (with Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap JS (with Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 

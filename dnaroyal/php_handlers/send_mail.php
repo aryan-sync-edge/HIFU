@@ -8,7 +8,7 @@ require '../lp-hair-transplant/vendor/autoload.php'; // Adjust path if needed
 $name = $_POST['mf-text'] ?? '';
 $email = $_POST['mf-email'] ?? '';
 $phone = $_POST['mf-telephone'] ?? '';
-$services = $_POST['mf-multi-select'] ?? [];
+
 $comments = $_POST['mf-textarea'] ?? '';
 
 $services_list = is_array($services) ? implode(", ", $services) : $services;
@@ -35,14 +35,14 @@ try {
     $mail->setFrom($from_email, $from_name);
     $mail->addAddress($company_email);
     $mail->Subject = "New Contact Form Submission";
-    $mail->Body    = "Name: $name\nEmail: $email\nPhone: $phone\nServices: $services_list\nComments: $comments";
+    $mail->Body    = "Name: $name\nEmail: $email\nPhone: $phone\nComments: $comments";
     $mail->send();
 
     // 2. Send Thank You to User
     $mail->clearAddresses();
     $mail->addAddress($email);
     $mail->Subject = "Thank You for Contacting Us";
-    $mail->Body    = "Hi $name,\n\nThanks for contacting us about: $services_list.\nWe'll be in touch shortly.\n\nBest,\nYour Company Team";
+    $mail->Body    = "Hi $name,\n\nThanks for contacting us We'll be in touch shortly.\n\nBest,\nYour Company Team";
     $mail->send();
 
     header("Location: ../lp-hair-transplant/index.html?status=success");
