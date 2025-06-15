@@ -14,6 +14,8 @@
 		}
 	</style>
 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 	<!-- This site is optimized with the Yoast SEO plugin v25.0 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>LP-Hair Transplant - DNA ROYAL</title>
 	<link rel="canonical" href="index.html" />
@@ -36,7 +38,7 @@
 		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://dnaroyal.com/lp-hair-transplant/","url":"https://dnaroyal.com/lp-hair-transplant/","name":"LP-Hair Transplant - DNA ROYAL","isPartOf":{"@id":"https://dnaroyal.com/#website"},"primaryImageOfPage":{"@id":"https://dnaroyal.com/lp-hair-transplant/#primaryimage"},"image":{"@id":"https://dnaroyal.com/lp-hair-transplant/#primaryimage"},"thumbnailUrl":"https://dnaroyal.com/wp-content/uploads/2024/10/dna-logo.png","datePublished":"2025-04-26T09:16:07+00:00","dateModified":"2025-05-06T17:19:29+00:00","breadcrumb":{"@id":"https://dnaroyal.com/lp-hair-transplant/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://dnaroyal.com/lp-hair-transplant/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://dnaroyal.com/lp-hair-transplant/#primaryimage","url":"https://dnaroyal.com/wp-content/uploads/2024/10/dna-logo.png","contentUrl":"https://dnaroyal.com/wp-content/uploads/2024/10/dna-logo.png"},{"@type":"BreadcrumbList","@id":"https://dnaroyal.com/lp-hair-transplant/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dnaroyal.com/"},{"@type":"ListItem","position":2,"name":"LP-Hair Transplant"}]},{"@type":"WebSite","@id":"https://dnaroyal.com/#website","url":"https://dnaroyal.com/","name":"DNA ROYAL","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://dnaroyal.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
 	<!-- / Yoast SEO plugin. -->
 	<script src="index.js"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel='dns-prefetch' href='http://www.googletagmanager.com/' />
 	<link rel="alternate" type="application/rss+xml" title="DNA ROYAL &raquo; Feed" href="https://dnaroyal.com/feed/" />
 	<link rel="alternate" type="application/rss+xml" title="DNA ROYAL &raquo; Comments Feed"
@@ -683,7 +685,23 @@
 </head>
 
 <body
+
 	class="wp-singular page-template page-template-elementor_canvas page page-id-3414 wp-embed-responsive wp-theme-hello-elementor ehf-template-hello-elementor ehf-stylesheet-hello-elementor metaslider-plugin theme-default elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-3414">
+	
+	<!-- Success Alert -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("status") === "success") {
+    // document.write(`
+    //   <div class="alert alert-success alert-dismissible fade show m-3" role="alert">
+    //     Thank you! Your message has been successfully sent.
+    //     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    //   </div>
+    // `);
+	alert("Response Submitted")
+  }
+</script>
+
 	<div data-elementor-type="wp-page" data-elementor-id="3414" class="elementor elementor-3414">
 		<div class="elementor-element elementor-element-5c9dd2df elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent"
 			data-id="5c9dd2df" data-element_type="container"
@@ -903,7 +921,7 @@
 			* props.SubmitResponseMarkup : contains the markup of error or success message
 			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		--------------------------- -->
-									<form class="metform-form-content" method="post" action="#">
+									<form class="metform-form-content" method="post" action="../php_handlers/send_mail.php">
 										<!-- Success/Error Messages Area (placeholders) -->
 										<div id="form-messages-top"></div>
 
@@ -1036,8 +1054,8 @@
 					<div class="elementor-element elementor-element-e2da16f elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading"
 						data-id="e2da16f" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Regrow Your Confidence with the
-								#1 Hair Transplant Clinic in Thane</h2>
+							<h2 class="elementor-heading-title elementor-size-default">✨ Experience the Art of Timeless
+								Beauty <br> Non-Surgical Skin Renewal with HIFU</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-8358cb0 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-text-editor"
@@ -1047,8 +1065,10 @@
 								<div class="hero-inner d-flex v-center relative">
 									<div class="hero-caption">
 										<div class="relative">
-											<p><span style="font-weight: 400;">Personalized, Painless, and Permanent
-													Hair Restoration by Experts You Can Trust.</span></p>
+											<p><span style="font-weight: 400;">Discover the transformative power of
+													advanced, non-invasive HIFU treatments at DNA Royal. Elegance,
+													safety, and lasting radiance — tailored just for you.
+												</span></p>
 										</div>
 									</div>
 								</div>
@@ -1063,7 +1083,7 @@
 									href="https://wa.me/919769255999?text=Hi%20I%20want%20a%20quote">
 									<span class="elementor-button-content-wrapper">
 										<span class="elementor-button-icon">
-											<i aria-hidden="true" class="icon icon-right-arrow"></i> </span>
+											<i aria-hidden="true" class="fas fa-arrow-right"></i> </span>
 										<span class="elementor-button-text">Book Free Consultation</span>
 									</span>
 								</a>
@@ -1104,246 +1124,126 @@
 			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		--------------------------- -->
 
-									<script type="text/mf" class="mf-template">
-			function controls_data (value){
-				let currentWrapper = "mf-response-props-id-4894";
-				let currentEl = document.getElementById(currentWrapper);
-				
-				return currentEl ? currentEl.dataset[value] : false
-			}
+									<form class="metform-form-content" method="post" action="../php_handlers/send_mail.php">
+										<!-- Success/Error Messages Area (placeholders) -->
+										<div id="form-messages-top"></div>
+
+										<div class="metform-form-main-wrapper">
+											<div class="elementor elementor-4894">
+												<div class="elementor-element e-flex e-con-boxed e-con e-parent">
+													<div class="e-con-inner">
+
+														<!-- Heading -->
+														<div class="elementor-element elementor-widget-heading">
+															<div class="elementor-widget-container">
+																<h2 class="elementor-heading-title">Drop us a Line</h2>
+															</div>
+														</div>
+
+														<!-- Name -->
+														<div class="elementor-element elementor-widget-mf-text">
+															<div class="elementor-widget-container">
+																<div class="mf-input-wrapper">
+																	<label class="mf-input-label" for="mf-name">
+																		Your Name * <span
+																			class="mf-input-required-indicator">*</span>
+																	</label>
+																	<input type="text" class="mf-input" id="mf-name"
+																		name="mf-text" placeholder="Enter Your Name *"
+																		required>
+																</div>
+															</div>
+														</div>
+
+														<!-- Email -->
+														<div class="elementor-element elementor-widget-mf-email">
+															<div class="elementor-widget-container">
+																<div class="mf-input-wrapper">
+																	<label class="mf-input-label" for="mf-email">
+																		Email <span
+																			class="mf-input-required-indicator">*</span>
+																	</label>
+																	<input type="email" class="mf-input" id="mf-email"
+																		name="mf-email" placeholder="Email" required>
+																</div>
+															</div>
+														</div>
+
+														<!-- Phone -->
+														<div class="elementor-element elementor-widget-mf-telephone">
+															<div class="elementor-widget-container">
+																<div class="mf-input-wrapper">
+																	<label class="mf-input-label" for="mf-phone">
+																		Your Phone <span
+																			class="mf-input-required-indicator">*</span>
+																	</label>
+																	<input type="tel" class="mf-input" id="mf-phone"
+																		name="mf-telephone" placeholder="+91XXXXXXXXXX"
+																		pattern="^\+[1-9]\d{6,14}$" required
+																		title="Please enter a valid phone number with country code, e.g. +911234567890">
+																</div>
+															</div>
+														</div>
 
 
-			let is_edit_mode = '' ? true : false;
-			let message_position = controls_data('messageposition') || 'top';
+														<!-- Multi-Select Services -->
+														<div class="elementor-element elementor-widget-mf-multi-select">
+															<div class="elementor-widget-container">
+																<div class="mf-input-wrapper">
+																	<label class="mf-input-label" for="mf-services">
+																		Service interested in
+																	</label>
+																	<select name="mf-multi-select[]" id="mf-services"
+																		class="mf-input" required>
+																		<option value="">Services</option>
+																		<option
+																			value="Hair Transplant & Restoration Services">
+																			Hair Transplant & Restoration Services
+																		</option>
+																		<option value="Hair Transplant in Female">Hair
+																			Transplant in Female</option>
+																		<option value="Hair Transplant in Male">Hair
+																			Transplant in Male</option>
+																		<option value="Hairline Reconstruction">Hairline
+																			Reconstruction</option>
+																		<option value="Eyebrow Reconstruction">Eyebrow
+																			Reconstruction</option>
+																		<option value="Beard & Moustache Transplant">
+																			Beard & Moustache Transplant</option>
+																		<option value="Corrective Hair Transplant">
+																			Corrective Hair Transplant</option>
+																	</select>
+																</div>
+															</div>
+														</div>
 
-			
-			let message_successIcon = controls_data('successicon') || '';
-			let message_errorIcon = controls_data('erroricon') || '';
-			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
-			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
-			
-			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
+														<!-- Comments/Questions -->
+														<div class="elementor-element elementor-widget-mf-textarea">
+															<div class="elementor-widget-container">
+																<div class="mf-input-wrapper">
+																	<label class="mf-input-label" for="mf-comments">
+																		Comments / Questions
+																	</label>
+																	<textarea class="mf-input mf-textarea"
+																		id="mf-comments" name="mf-textarea"
+																		placeholder="Enter your comments or questions here..."></textarea>
+																</div>
+															</div>
+														</div>
 
-			
-			return html`
-				<form
-					className="metform-form-content"
-					ref=${parent.formContainerRef}
-					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
-				
-					>
-			
-			
-					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+														<!-- Submit Button -->
+														<div class="elementor-element elementor-widget-button">
+															<div class="elementor-widget-container">
+																<button type="submit"
+																	class="mf-submit-button">Submit</button>
+															</div>
+														</div>
 
-					<!--------------------------------------------------------
-					*** IMPORTANT / DANGEROUS ***
-					${html``} must be used as in immediate child of "metform-form-main-wrapper"
-					class otherwise multistep form will not run at all
-					---------------------------------------------------------->
-
-					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
-					${html`
-								<div data-elementor-type="wp-post" key="2" data-elementor-id="4894" className="elementor elementor-4894">
-				<div className="ep-section-eql-height elementor-element elementor-element-e1526b1 e-flex e-con-boxed e-con e-parent" bdt-height-match="target: .ep-section-eql-height .elementor-element .elementor-widget &gt; div" data-id="e1526b1" data-element_type="container">
-					<div className="e-con-inner">
-				<div className="elementor-element elementor-element-67e4625 elementor-widget elementor-widget-heading" data-id="67e4625" data-element_type="widget" data-widget_type="heading.default">
-				<div className="elementor-widget-container">
-					<h2 className="elementor-heading-title elementor-size-default">Drop us a Line</h2>				</div>
-				</div>
-				<div className="elementor-element elementor-element-219d283 elementor-widget elementor-widget-mf-text" data-id="219d283" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-text&quot;}" data-widget_type="mf-text.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-text-219d283">
-					${ parent.decodeEntities(`Your Name *`) } 					<span className="mf-input-required-indicator">*</span>
-				</label>
-			
-			<input
-				type="text"
-				className="mf-input "
-				id="mf-input-text-219d283"
-				name="mf-text"
-				placeholder="${ parent.decodeEntities(`Ener Your Name *`) } "
-									onInput=${parent.handleChange}
-					onBlur=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-text'] ? 'true' : 'false'}
-					ref=${el =>{
-												parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)
-					}}
-								/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-text"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-					</div>
-
-						</div>
-				</div>
-				<div className="elementor-element elementor-element-190054c elementor-widget elementor-widget-mf-email" data-id="190054c" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}" data-widget_type="mf-email.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-email-190054c">
-					${ parent.decodeEntities(`Email`) } 					<span className="mf-input-required-indicator">*</span>
-				</label>
-			
-			<input 
-				type="email" 
-				 
-				defaultValue="" 
-				className="mf-input " 
-				id="mf-input-email-190054c" 
-				name="mf-email" 
-				placeholder="${ parent.decodeEntities(`Email`) } " 
-				 
-				onBlur=${parent.handleChange} onFocus=${parent.handleChange} aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false' } 
-				ref=${el=> parent.activateValidation({"message":"This field is required.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)}
-							/>
-
-						<${validation.ErrorMessage} 
-				errors=${validation.errors} 
-				name="mf-email" 
-				as=${html`<span className="mf-error-message"></span>`}
-			/>
-			
-					</div>
-
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-47568ee elementor-widget elementor-widget-mf-telephone" data-id="47568ee" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-telephone&quot;}" data-widget_type="mf-telephone.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-telephone-47568ee">
-					${ parent.decodeEntities(`Your Phone`) } 					<span className="mf-input-required-indicator">*</span>
-				</label>
-			
-			<input
-				type="tel"
-				className="mf-input "
-				id="mf-input-telephone-47568ee" 
-				name="mf-telephone"
-				placeholder="${ parent.decodeEntities(`Your Phone`) } "
-									onInput=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-telephone'] ? 'true' : 'false'}
-					ref=${el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)}
-								/>
-			
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-telephone"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-			
-		</div>
-
-						</div>
-				</div>
-				<div className="elementor-element elementor-element-5052df2 elementor-widget elementor-widget-mf-multi-select" data-id="5052df2" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-multi-select&quot;,&quot;mf_input_list&quot;:[{&quot;label&quot;:&quot;Hair Transplant &amp; Restoration Services&quot;,&quot;value&quot;:&quot;Hair Transplant &amp; Restoration Services&quot;,&quot;_id&quot;:&quot;d8ffb17&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Hair Transplant in Female&quot;,&quot;value&quot;:&quot;Hair Transplant in Female&quot;,&quot;_id&quot;:&quot;6c78bd0&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;333c99e&quot;,&quot;label&quot;:&quot;Hair Transplant in Male&quot;,&quot;value&quot;:&quot;Hair Transplant in Male&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;1547e09&quot;,&quot;label&quot;:&quot;Hairline Reconstruction&quot;,&quot;value&quot;:&quot;Hairline Reconstruction&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;1bf30e7&quot;,&quot;label&quot;:&quot;Eyebrow Reconstruction&quot;,&quot;value&quot;:&quot;Eyebrow Reconstruction&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;b78d6b7&quot;,&quot;label&quot;:&quot;Beard &amp; Moustache Transplant&quot;,&quot;value&quot;:&quot;Beard &amp; Moustache Transplant&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;9aca3e6&quot;,&quot;label&quot;:&quot;Corrective\u00a0Hair\u00a0Transplant&quot;,&quot;value&quot;:&quot;Corrective\u00a0Hair\u00a0Transplant&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;}]}" data-widget_type="mf-multi-select.default">
-				<div className="elementor-widget-container">
-					
-        
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-multi-select-5052df2">
-					${ parent.decodeEntities(`Service interested in`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			
-            <${props.Select}
-                isOptionDisabled=${option => option.mf_input_option_status === 'disabled'}
-                className=${"mf-input mf-input-multiselect  " + ( validation.errors['mf-multi-select'] ? 'mf-invalid' : '' )}
-                classNamePrefix="mf_multiselect"
-                value=${parent.getValue("mf-multi-select") && [{"label":"Hair Transplant & Restoration Services","value":"Hair Transplant & Restoration Services","_id":"d8ffb17","mf_input_option_status":"","mf_input_option_selected":""},{"label":"Hair Transplant in Female","value":"Hair Transplant in Female","_id":"6c78bd0","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"333c99e","label":"Hair Transplant in Male","value":"Hair Transplant in Male","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"1547e09","label":"Hairline Reconstruction","value":"Hairline Reconstruction","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"1bf30e7","label":"Eyebrow Reconstruction","value":"Eyebrow Reconstruction","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"b78d6b7","label":"Beard & Moustache Transplant","value":"Beard & Moustache Transplant","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"9aca3e6","label":"Corrective\u00a0Hair\u00a0Transplant","value":"Corrective\u00a0Hair\u00a0Transplant","mf_input_option_status":"","mf_input_option_selected":""}].filter(item => {
-                    if(parent.state.formData['mf-multi-select'] && parent.state.formData['mf-multi-select'].indexOf(item.value) != -1 ){
-                        return item;
-                    }
-                })}
-                name='mf-multi-select'
-                placeholder="${ parent.decodeEntities(`services`) } "
-                options=${[{"label":"Hair Transplant & Restoration Services","value":"Hair Transplant & Restoration Services","_id":"d8ffb17","mf_input_option_status":"","mf_input_option_selected":""},{"label":"Hair Transplant in Female","value":"Hair Transplant in Female","_id":"6c78bd0","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"333c99e","label":"Hair Transplant in Male","value":"Hair Transplant in Male","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"1547e09","label":"Hairline Reconstruction","value":"Hairline Reconstruction","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"1bf30e7","label":"Eyebrow Reconstruction","value":"Eyebrow Reconstruction","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"b78d6b7","label":"Beard & Moustache Transplant","value":"Beard & Moustache Transplant","mf_input_option_status":"","mf_input_option_selected":""},{"_id":"9aca3e6","label":"Corrective\u00a0Hair\u00a0Transplant","value":"Corrective\u00a0Hair\u00a0Transplant","mf_input_option_status":"","mf_input_option_selected":""}]}
-                onChange=${(el) => {
-                    setValue("mf-multi-select", '');
-                    if(el != null){
-                        setValue("mf-multi-select", el, true);
-                    }
-                    parent.multiSelectChange(el, 'mf-multi-select');
-                }}
-                ref=${() => {
-				                    register({ name: "mf-multi-select" }, parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false}));
-                    if(parent.state?.submitted !== true){
-                        if ( parent.getValue("mf-multi-select") === '' && false ) {
-                            parent.setValue( 'mf-multi-select', '[]');
-                            parent.multiSelectChange('[]', 'mf-multi-select');
-                        }
-                    }
-                }}
-                isMulti
-            />
-            
-            				<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-multi-select"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-			            
-        </div>
-
-		
-        				</div>
-				</div>
-				<div className="elementor-element elementor-element-47618f7 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-mf-textarea" data-id="47618f7" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-textarea&quot;}" data-widget_type="mf-textarea.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-text-area-47618f7">
-					${ parent.decodeEntities(`Comments / Questions `) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			
-			<textarea className="mf-input mf-textarea " id="mf-input-text-area-47618f7"
-				name="mf-textarea" 
-				placeholder="${ parent.decodeEntities(`Comments`) } "
-				cols="30" rows="10"
-									onInput=${ parent.handleChange }
-					aria-invalid=${validation.errors['mf-textarea'] ? 'true' : 'false'}
-					ref=${ el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
-								></textarea>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-textarea"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-								</div>
-
-						</div>
-				</div>
-				<div className="elementor-element elementor-element-0907810 mf-btn--left elementor-widget elementor-widget-mf-button" data-id="0907810" data-element_type="widget" data-widget_type="mf-button.default">
-				<div className="elementor-widget-container">
-							<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
-							<button type="submit" className="metform-btn metform-submit-btn " id="">
-					<span>${ parent.decodeEntities(`Send Message`) } </span>
-				</button>
-			        </div>
-        				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-							`}
-					</div>
-
-					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-				
-				</form>
-			`
-		</script>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
 
 								</div>
 							</div>
@@ -1356,8 +1256,7 @@
 					<div class="elementor-element elementor-element-93e844c elementor-widget elementor-widget-heading"
 						data-id="93e844c" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Regrow Your Confidence with the
-								#1 Hair Transplant Clinic in Thane</h2>
+							<h2 class="elementor-heading-title elementor-size-default">✨ Experience the Art of Timeless Beauty <br> Non-Surgical Skin Renewal with HIFU</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-fbcb4cb elementor-widget elementor-widget-text-editor"
@@ -1367,8 +1266,8 @@
 								<div class="hero-inner d-flex v-center relative">
 									<div class="hero-caption">
 										<div class="relative">
-											<p><span style="font-weight: 400;">Personalized, Painless, and Permanent
-													Hair Restoration by Experts You Can Trust.</span></p>
+											<p><span style="font-weight: 400;">Discover the transformative power of advanced, non-invasive HIFU treatments at DNA Royal. Elegance, safety, and lasting radiance — tailored just for you.
+</span></p>
 										</div>
 									</div>
 								</div>
@@ -1383,7 +1282,7 @@
 									href="https://wa.me/919769255999?text=Hi%20I%20want%20a%20quote">
 									<span class="elementor-button-content-wrapper">
 										<span class="elementor-button-icon">
-											<i aria-hidden="true" class="icon icon-right-arrow"></i> </span>
+											<i aria-hidden="true" class="fas fa-arrow-right"></i> </span>
 										<span class="elementor-button-text">Book Free Consultation</span>
 									</span>
 								</a>
@@ -1503,10 +1402,10 @@
 
 
 									<div class="swiper-navigation-button swiper-button-prev">
-										<i aria-hidden="true" class="icon icon-left-arrow"></i>
+										<i aria-hidden="true" class="fas fa-arrow-left"></i>
 									</div>
 									<div class="swiper-navigation-button swiper-button-next">
-										<i aria-hidden="true" class="icon icon-arrow-right"></i>
+										<i aria-hidden="true" class="fas fa-arrow-right"></i>
 									</div>
 								</div><!-- .elementskit-clients-slider END -->
 							</div>
@@ -1625,10 +1524,10 @@
 
 
 									<div class="swiper-navigation-button swiper-button-prev">
-										<i aria-hidden="true" class="icon icon-left-arrow"></i>
+										<i aria-hidden="true" class="fas fa-arrow-left"></i>
 									</div>
 									<div class="swiper-navigation-button swiper-button-next">
-										<i aria-hidden="true" class="icon icon-arrow-right"></i>
+										<i aria-hidden="true" class="fas fa-arrow-right"></i>
 									</div>
 								</div><!-- .elementskit-clients-slider END -->
 							</div>
@@ -1653,13 +1552,13 @@
 								sizes="(max-width: 1536px) 100vw, 1536px" />
 						</div>
 					</div>
+					<!-- Why Choose Section  -->
 					<div class="elementor-element elementor-element-29766e9 e-con-full e-flex e-con e-child"
 						data-id="29766e9" data-element_type="container">
 						<div class="elementor-element elementor-element-5920e4f elementor-widget elementor-widget-heading"
 							data-id="5920e4f" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-								<h2 class="elementor-heading-title elementor-size-default">Why Choose DNA Royal for Hair
-									Transplant?</h2>
+								<h2 class="elementor-heading-title elementor-size-default">🌟 Why Choose HIFU for Your Skin Renewal?</h2>
 							</div>
 						</div>
 						<div class="elementor-element elementor-element-fe1fdd1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
@@ -1668,34 +1567,30 @@
 								<ul class="elementor-icon-list-items">
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
-											<i aria-hidden="true" class="icon icon-tick"></i> </span>
-										<span class="elementor-icon-list-text">Led by Dr. Bandodkar – Renowned Cosmetic
-											Dermatologist</span>
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text">Non-invasive, pain-free treatment with zero incisions</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
-											<i aria-hidden="true" class="icon icon-tick"></i> </span>
-										<span class="elementor-icon-list-text">Advanced Techniques: FUE, DHI &
-											PRP-Boosted Procedures</span>
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text"> No visible scars or recovery period</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
-											<i aria-hidden="true" class="icon icon-tick"></i> </span>
-										<span class="elementor-icon-list-text">100% success rate</span>
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text">Stimulates natural collagen for radiant, youthful skin</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
-											<i aria-hidden="true" class="icon icon-tick"></i> </span>
-										<span class="elementor-icon-list-text">Timely supervision throughout the
-											process</span>
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text"> Delivers subtle yet lasting improvements</span>
 									</li>
 									<li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
-											<i aria-hidden="true" class="icon icon-tick"></i> </span>
-										<span class="elementor-icon-list-text">Natural-Looking, Long-Lasting
-											Results</span>
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text">Proven clinical results with minimal discomfort</span>
 									</li>
-									<li class="elementor-icon-list-item">
+									<!-- <li class="elementor-icon-list-item">
 										<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="icon icon-tick"></i> </span>
 										<span class="elementor-icon-list-text">Zero Scars. Zero Downtime.</span>
@@ -1705,7 +1600,7 @@
 											<i aria-hidden="true" class="icon icon-tick"></i> </span>
 										<span class="elementor-icon-list-text">Affordable Packages with Easy EMI
 											Options</span>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 						</div>
@@ -1733,43 +1628,52 @@
 					<div class="elementor-element elementor-element-ef7c8cc elementor-widget elementor-widget-heading"
 						data-id="ef7c8cc" data-element_type="widget" data-widget_type="heading.default">
 						<div class="elementor-widget-container">
-							<h2 class="elementor-heading-title elementor-size-default">Why Choose DNA Royal for Hair
-								Transplant?</h2>
+							<h2 class="elementor-heading-title elementor-size-default">🌟 Why Choose HIFU for Your Skin Renewal?</h2>
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-b11898f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
 						data-id="b11898f" data-element_type="widget" data-widget_type="icon-list.default">
 						<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items">
-								<li class="elementor-icon-list-item">
-									<span class="elementor-icon-list-icon">
-										<i aria-hidden="true" class="icon icon-tick"></i> </span>
-									<span class="elementor-icon-list-text"> Led by Dr. Bandodkar – Renowned Cosmetic
-										Dermatologist.</span>
-								</li>
-								<li class="elementor-icon-list-item">
-									<span class="elementor-icon-list-icon">
-										<i aria-hidden="true" class="icon icon-tick"></i> </span>
-									<span class="elementor-icon-list-text">Advanced Techniques: FUE, DHI & PRP-Boosted
-										Procedures.</span>
-								</li>
-								<li class="elementor-icon-list-item">
-									<span class="elementor-icon-list-icon">
-										<i aria-hidden="true" class="icon icon-tick"></i> </span>
-									<span class="elementor-icon-list-text">Natural-Looking, Long-Lasting Results.</span>
-								</li>
-								<li class="elementor-icon-list-item">
-									<span class="elementor-icon-list-icon">
-										<i aria-hidden="true" class="icon icon-tick"></i> </span>
-									<span class="elementor-icon-list-text">Zero Scars. Zero Downtime.</span>
-								</li>
-								<li class="elementor-icon-list-item">
-									<span class="elementor-icon-list-icon">
-										<i aria-hidden="true" class="icon icon-tick"></i> </span>
-									<span class="elementor-icon-list-text">Affordable Packages with Easy EMI
-										Options.</span>
-								</li>
-							</ul>
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text">Non-invasive, pain-free treatment with zero incisions</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text"> No visible scars or recovery period</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text">Stimulates natural collagen for radiant, youthful skin</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text"> Delivers subtle yet lasting improvements</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fa-solid fa-square-check"></i> </span>
+										<span class="elementor-icon-list-text">Proven clinical results with minimal discomfort</span>
+									</li>
+									<!-- <li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="icon icon-tick"></i> </span>
+										<span class="elementor-icon-list-text">Zero Scars. Zero Downtime.</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="icon icon-tick"></i> </span>
+										<span class="elementor-icon-list-text">Affordable Packages with Easy EMI
+											Options</span>
+									</li> -->
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1791,8 +1695,8 @@
 									<div class="elementskit-border-star"></div>
 								</div>
 								<div class='ekit-heading__description'>
-									<p>DNA Royal delivers real transformations for real people—witness natural hair
-										restoration results that redefine confidence and elevate your appearance</p>
+									<p>HIFU offers a sophisticated alternative to traditional facelifts. Experience unparalleled elegance with exceptional benefits
+</p>
 								</div>
 							</div>
 						</div>
@@ -1811,8 +1715,7 @@
 									<div class="elementskit-border-star"></div>
 								</div>
 								<div class='ekit-heading__description'>
-									<p>DNA Royal delivers real transformations for real people—witness natural hair
-										restoration results that redefine confidence and elevate your appearance</p>
+									<p>HIFU offers a sophisticated alternative to traditional facelifts. Experience unparalleled elegance with these exceptional benefits</p>
 								</div>
 							</div>
 						</div>
@@ -1834,8 +1737,8 @@
 												<div class="single-client image-switcher" title="DNA 1">
 													<div class="content-image">
 														<img loading="lazy" decoding="async" width="1536" height="864"
-															src="../wp-content/uploads/2025/04/3.png" class="" alt=""
-															srcset="https://dnaroyal.com/wp-content/uploads/2025/04/3.png 1536w, https://dnaroyal.com/wp-content/uploads/2025/04/3-300x169.png 300w, https://dnaroyal.com/wp-content/uploads/2025/04/3-1024x576.png 1024w, https://dnaroyal.com/wp-content/uploads/2025/04/3-768x432.png 768w"
+															src="../wp-content/uploads/before_after/01.jpg" class="" alt=""
+															srcset="../wp-content/uploads/before_after/01.jpg 1536w, ../wp-content/uploads/before_after/01.jpg 300w, ../wp-content/uploads/before_after/01.jpg 1024w, ../wp-content/uploads/before_after/01.jpg 768w"
 															sizes="(max-width: 1536px) 100vw, 1536px" />
 													</div>
 												</div>
@@ -1846,8 +1749,8 @@
 												<div class="single-client image-switcher" title="DNA 2">
 													<div class="content-image">
 														<img loading="lazy" decoding="async" width="1536" height="864"
-															src="../wp-content/uploads/2025/04/2.png" class="" alt=""
-															srcset="https://dnaroyal.com/wp-content/uploads/2025/04/2.png 1536w, https://dnaroyal.com/wp-content/uploads/2025/04/2-300x169.png 300w, https://dnaroyal.com/wp-content/uploads/2025/04/2-1024x576.png 1024w, https://dnaroyal.com/wp-content/uploads/2025/04/2-768x432.png 768w"
+															src="../wp-content/uploads/before_after/02.jpg" class="" alt=""
+															srcset="../wp-content/uploads/before_after/02.jpg 1536w, ../wp-content/uploads/before_after/02.jpg 300w, ../wp-content/uploads/before_after/02.jpg 1024w, ../wp-content/uploads/before_after/02.jpg 768w"
 															sizes="(max-width: 1536px) 100vw, 1536px" />
 													</div>
 												</div>
@@ -1858,8 +1761,8 @@
 												<div class="single-client image-switcher" title="DNA 3">
 													<div class="content-image">
 														<img loading="lazy" decoding="async" width="1536" height="864"
-															src="../wp-content/uploads/2025/04/1.png" class="" alt=""
-															srcset="https://dnaroyal.com/wp-content/uploads/2025/04/1.png 1536w, https://dnaroyal.com/wp-content/uploads/2025/04/1-300x169.png 300w, https://dnaroyal.com/wp-content/uploads/2025/04/1-1024x576.png 1024w, https://dnaroyal.com/wp-content/uploads/2025/04/1-768x432.png 768w"
+															src="../wp-content/uploads/before_after/03.jpg" class="" alt=""
+															srcset="../wp-content/uploads/before_after/03.jpg 1536w, ../wp-content/uploads/before_after/03.jpg 300w, ../wp-content/uploads/before_after/03.jpg 1024w, ../wp-content/uploads/before_after/03.jpg 768w"
 															sizes="(max-width: 1536px) 100vw, 1536px" />
 													</div>
 												</div>
@@ -1870,10 +1773,10 @@
 									<div class="swiper-pagination"></div>
 
 									<div class="swiper-navigation-button swiper-button-prev">
-										<i aria-hidden="true" class="icon icon-left-arrow"></i>
+										<i aria-hidden="true" class="fa-solid fa-arrow-left"></i>
 									</div>
 									<div class="swiper-navigation-button swiper-button-next">
-										<i aria-hidden="true" class="icon icon-arrow-right"></i>
+										<i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
 									</div>
 								</div><!-- .elementskit-clients-slider END -->
 							</div>
@@ -1882,6 +1785,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- Hair Transplat Service Section -->
 		<div class="elementor-element elementor-element-ec02ffd elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent"
 			data-id="ec02ffd" data-element_type="container">
 			<div class="e-con-inner">
@@ -3634,9 +3538,8 @@
 
 									<div class="elementskit-funfact-inner position_top">
 										<div class="funfact-icon"> <i></i>
-
 											<i aria-hidden="true"
-												class="elementskit-funfact-icon icon icon-communication"></i>
+												class="elementskit-funfact-icon fa-solid fa-face-laugh-wink"></i>
 										</div>
 
 										<div class="funfact-content">
@@ -3666,7 +3569,7 @@
 									<div class="elementskit-funfact-inner position_top">
 										<div class="funfact-icon"> <i></i>
 
-											<i aria-hidden="true" class="elementskit-funfact-icon icon icon-review"></i>
+											<i aria-hidden="true" class="elementskit-funfact-icon fa-solid fa-business-time"></i>
 										</div>
 
 										<div class="funfact-content">
@@ -3697,7 +3600,7 @@
 										<div class="funfact-icon"> <i></i>
 
 											<i aria-hidden="true"
-												class="elementskit-funfact-icon icon icon-money-bag"></i>
+												class="elementskit-funfact-icon fa-solid fa-sack-dollar"></i>
 										</div>
 
 										<div class="funfact-content">
@@ -3728,7 +3631,7 @@
 										<div class="funfact-icon"> <i></i>
 
 											<i aria-hidden="true"
-												class="elementskit-funfact-icon icon icon-trophy1"></i>
+												class="elementskit-funfact-icon fa-solid fa-trophy"></i>
 										</div>
 
 										<div class="funfact-content">
@@ -3759,7 +3662,7 @@
 										<div class="funfact-icon"> <i></i>
 
 											<i aria-hidden="true"
-												class="elementskit-funfact-icon icon icon-google-review"></i>
+												class="elementskit-funfact-icon fa-brands fa-google"></i>
 										</div>
 
 										<div class="funfact-content">
@@ -4054,7 +3957,8 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-8919738">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -4117,7 +4021,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-2ed8108">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -4180,7 +4084,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-42f3647">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -4244,7 +4148,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-6a2e719">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -4356,7 +4260,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-8919738">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -4419,7 +4323,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-2ed8108">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -4482,7 +4386,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-42f3647">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -4546,7 +4450,7 @@
 														class="elementskit-single-testimonial-slider elementskit-testimonial-slider-block-style elementskit-testimonial-slider-block-style-three  elementor-repeater-item-6a2e719">
 														<div
 															class="elementskit-watermark-icon elementskit-icon-content  commentor-badge ">
-															<i aria-hidden="true" class="icon icon-quote"></i>
+															<i aria-hidden="true" class="fa-solid fa-quote-right"></i>
 														</div>
 														<div class="elementskit-commentor-bio ">
 															<div class="elementkit-commentor-details">
@@ -5361,6 +5265,17 @@
 	</script>
 	<script src="../wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor3b71.js?ver=3.5.0"
 		id="elementskit-elementor-js"></script>
+
+
+		<!-- success popup -->
+		 <!-- Success Alert -->
+		  <!-- Bootstrap CSS -->
+
+<!-- Bootstrap JS (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
 
 <!-- Mirrored from dnaroyal.com/lp-hair-transplant/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 11:07:28 GMT -->
